@@ -1,0 +1,719 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.clear {
+  clear: both;
+  height: 0px;
+  line-height: 0px;
+  font-size: 0px;
+  overflow: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+@font-face {
+  font-family: 'futura_ltbook';
+  src: url('fonts/ufonts.com_futura_lt_book_1_-webfont.eot');
+  src: url('fonts/ufonts.com_futura_lt_book_1_-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/ufonts.com_futura_lt_book_1_-webfont.woff') format('woff'), url('fonts/ufonts.com_futura_lt_book_1_-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+	Variable Grid System.
+	Learn more ~ http://www.spry-soft.com/grids/
+	Based on 960 Grid System - http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+*/
+body {
+  min-width: 960px;
+}
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+.g1,
+.g2,
+.g3,
+.g4,
+.g5,
+.g6,
+.g7,
+.g8,
+.g9,
+.g10,
+.g11,
+.g12 {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.push_1,
+.pull_1,
+.push_2,
+.pull_2,
+.push_3,
+.pull_3,
+.push_4,
+.pull_4,
+.push_5,
+.pull_5,
+.push_6,
+.pull_6,
+.push_7,
+.pull_7,
+.push_8,
+.pull_8,
+.push_9,
+.pull_9,
+.push_10,
+.pull_10,
+.push_11,
+.pull_11,
+.push_12,
+.pull_12 {
+  position: relative;
+}
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+.alpha {
+  margin-left: 0;
+}
+.omega {
+  margin-right: 0;
+}
+/* Grid >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.wrap .g1 {
+  width: 60px;
+}
+.wrap .g2 {
+  width: 140px;
+}
+.wrap .g3 {
+  width: 220px;
+}
+.wrap .g4 {
+  width: 300px;
+}
+.wrap .g5 {
+  width: 380px;
+}
+.wrap .g6 {
+  width: 460px;
+}
+.wrap .g7 {
+  width: 540px;
+}
+.wrap .g8 {
+  width: 620px;
+}
+.wrap .g9 {
+  width: 700px;
+}
+.wrap .g10 {
+  width: 780px;
+}
+.wrap .g11 {
+  width: 860px;
+}
+.wrap .g12 {
+  width: 940px;
+}
+/* Prefix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.wrap .prefix_1 {
+  padding-left: 80px;
+}
+.wrap .prefix_2 {
+  padding-left: 160px;
+}
+.wrap .prefix_3 {
+  padding-left: 240px;
+}
+.wrap .prefix_4 {
+  padding-left: 320px;
+}
+.wrap .prefix_5 {
+  padding-left: 400px;
+}
+.wrap .prefix_6 {
+  padding-left: 480px;
+}
+.wrap .prefix_7 {
+  padding-left: 560px;
+}
+.wrap .prefix_8 {
+  padding-left: 640px;
+}
+.wrap .prefix_9 {
+  padding-left: 720px;
+}
+.wrap .prefix_10 {
+  padding-left: 800px;
+}
+.wrap .prefix_11 {
+  padding-left: 880px;
+}
+/* Suffix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.wrap .suffix_1 {
+  padding-right: 80px;
+}
+.wrap .suffix_2 {
+  padding-right: 160px;
+}
+.wrap .suffix_3 {
+  padding-right: 240px;
+}
+.wrap .suffix_4 {
+  padding-right: 320px;
+}
+.wrap .suffix_5 {
+  padding-right: 400px;
+}
+.wrap .suffix_6 {
+  padding-right: 480px;
+}
+.wrap .suffix_7 {
+  padding-right: 560px;
+}
+.wrap .suffix_8 {
+  padding-right: 640px;
+}
+.wrap .suffix_9 {
+  padding-right: 720px;
+}
+.wrap .suffix_10 {
+  padding-right: 800px;
+}
+.wrap .suffix_11 {
+  padding-right: 880px;
+}
+/* Push Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.wrap .push_1 {
+  left: 80px;
+}
+.wrap .push_2 {
+  left: 160px;
+}
+.wrap .push_3 {
+  left: 240px;
+}
+.wrap .push_4 {
+  left: 320px;
+}
+.wrap .push_5 {
+  left: 400px;
+}
+.wrap .push_6 {
+  left: 480px;
+}
+.wrap .push_7 {
+  left: 560px;
+}
+.wrap .push_8 {
+  left: 640px;
+}
+.wrap .push_9 {
+  left: 720px;
+}
+.wrap .push_10 {
+  left: 800px;
+}
+.wrap .push_11 {
+  left: 880px;
+}
+/* Pull Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.wrap .pull_1 {
+  left: -80px;
+}
+.wrap .pull_2 {
+  left: -160px;
+}
+.wrap .pull_3 {
+  left: -240px;
+}
+.wrap .pull_4 {
+  left: -320px;
+}
+.wrap .pull_5 {
+  left: -400px;
+}
+.wrap .pull_6 {
+  left: -480px;
+}
+.wrap .pull_7 {
+  left: -560px;
+}
+.wrap .pull_8 {
+  left: -640px;
+}
+.wrap .pull_9 {
+  left: -720px;
+}
+.wrap .pull_10 {
+  left: -800px;
+}
+.wrap .pull_11 {
+  left: -880px;
+}
+/*
+
+  Mixins:
+
+  .clearfix();
+  .center-block();
+  .border-radius(@radius: 5px);
+  .box-shadow(@shadow);
+  .rotate(@degrees);
+  .box-sizing(@boxmodel);
+  .opacity(@opacity);
+  .horizontal_gradient(@startColor: #555, @endColor: #333);
+  .vertical(@startColor: #555, @endColor: #333);
+
+  Fonts:
+
+  
+
+*/
+body {
+  font: 16px/30px 'futura_ltbook';
+  color: #7f8c8d;
+  background: #fff;
+}
+body a {
+  color: #7f8c8d;
+  text-decoration: none;
+}
+body img {
+  display: block;
+}
+header,
+section.s1,
+section.s2,
+section.s3,
+section.s4,
+section.s5,
+section.s6,
+section.s10,
+section.s9 {
+  overflow: hidden;
+}
+header {
+  background: #0084a2 url(i/header.png) no-repeat top center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 499px;
+}
+header a.logo {
+  display: block;
+  margin-top: 65px;
+}
+header a.appstore {
+  display: block;
+  margin-top: 88px;
+  float: right;
+}
+header a.video {
+  margin: 198px 100px 0;
+  display: block;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+header a.video img {
+  margin: 0 auto 29px;
+}
+section.s1 {
+  position: relative;
+  background: #ebedee;
+  text-align: center;
+}
+section.s1 img.free {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+section.s1 h3 {
+  font-size: 30px;
+  color: #00add3;
+  margin: 67px 0 13px;
+}
+section.s1 p {
+  margin: 0 0 38px;
+}
+section.s1 img.ipad {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin: 0 0 0 -411px;
+}
+section.s2 {
+  background: #2997b0 url(i/s2.png) no-repeat top center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  z-index: 100;
+  color: #fff;
+}
+section.s2 img {
+  -webkit-box-shadow: 0px 21px 21px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: 0px 21px 21px rgba(0, 0, 0, 0.34);
+  box-shadow: 0px 21px 21px rgba(0, 0, 0, 0.34);
+  margin: 45px 0 0 0;
+  position: relative;
+  z-index: 50;
+}
+section.s2 h3 {
+  font-size: 30px;
+  line-height: 40px;
+  margin: 95px 0 33px 0;
+}
+section.s2 p {
+  margin: 0 0 40px;
+}
+section.s2 h5 {
+  font-size: 18px;
+  margin: 0 0 7px;
+}
+section.s2 small {
+  font-size: 14px;
+  line-height: 24px;
+  display: block;
+}
+section.s3 {
+  background: #fff;
+  position: relative;
+  z-index: 150;
+}
+section.s3 h3 {
+  font-size: 30px;
+  color: #005a6f;
+  text-align: center;
+  margin: 55px 0 25px 0;
+}
+section.s3 img {
+  margin: 0 auto 45px;
+}
+section.s3 h4 {
+  font-size: 20px;
+  color: #7f8c8d;
+  margin: 35px 0 95px 0;
+}
+section.s3 h5 {
+  font-size: 18px;
+  color: #005a6f;
+  margin: 0 0 8px;
+}
+section.s3 p {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 0 20px;
+}
+section.s3 small {
+  font-size: 12px;
+}
+section.s4 {
+  text-align: center;
+  color: #fff;
+  background: url(i/s4.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+section.s4 img {
+  margin: 0 auto;
+}
+section.s4 h2 {
+  font-size: 46px;
+  line-height: 55px;
+  margin: -16px 180px 25px;
+}
+section.s4 p {
+  font-size: 20px;
+  line-height: 31px;
+  color: #95a5a6;
+  margin: 0 200px 60px;
+}
+section.s5 {
+  background: #ebedee;
+}
+section.s5 h3 {
+  font-size: 35px;
+  color: #2c3e50;
+  margin: 145px 0 70px 0;
+  text-align: center;
+}
+section.s5 img {
+  margin: 0 auto 25px;
+}
+section.s5 h4 {
+  font-size: 18px;
+  color: #34495e;
+  margin: 0 0 5px;
+}
+section.s5 p {
+  font-size: 14px;
+  color: #7f8c8d;
+  line-height: 18px;
+}
+section.s5 .g3,
+section.s5 .g4 {
+  text-align: center;
+}
+section.s6 {
+  background: #00add3;
+  color: #fff;
+}
+section.s6 h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 105px 0 60px;
+}
+section.s6 h5 {
+  text-align: center;
+  font-size: 24px;
+  color: #005a6f;
+  margin: 0 0 30px;
+}
+section.s6 p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 0 10px;
+}
+section.s7 {
+  position: relative;
+  background: #fff;
+}
+section.s7 img {
+  margin: 0 auto 50px;
+}
+section.s7 p {
+  font-size: 30px;
+  color: #005a6f;
+  line-height: 44px;
+  margin-bottom: 10px;
+}
+section.s8 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #00add3;
+  height: 120px;
+  line-height: 120px;
+  color: #fff;
+  font-size: 40px;
+}
+section.s8 a.appstore {
+  display: block;
+  float: right;
+  margin: 40px 0 0 0;
+}
+section.s9 {
+  background: #ebedee;
+}
+section.s9 .wrap {
+  padding: 95px 0 0 0;
+}
+section.s9 h4 {
+  color: #34495e;
+  font-size: 20px;
+  margin: 0 0 15px;
+}
+section.s9 p {
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0 0 26px;
+}
+section.s9 p:last-child {
+  margin: 0 0 66px;
+}
+section.s9 a {
+  color: #00add3;
+}
+footer {
+  background: #005a6f;
+  color: #fff;
+  padding: 70px 0 50px 0;
+}
+footer a.logo {
+  float: left;
+  display: block;
+  margin: 2px 30px 0 0;
+}
+footer h4 {
+  font-size: 22px;
+}
+footer h6 {
+  margin: 0 0 10px;
+}
+footer p {
+  font-size: 14px;
+  color: #bdc3c7;
+}
+footer li {
+  font-size: 16px;
+}
+footer a {
+  color: #bdc3c7;
+}
+footer hr {
+  margin: 0 0 10px;
+  border: none;
+  border-bottom: 1px solid #669ca9;
+}
+footer .social {
+  padding: 55px 0 23px 0;
+}
